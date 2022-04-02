@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-02T02:59:00.589Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36 Edg/99.0.1150.55" etag="CyQCS1U3_gNSxu7lj_C0" version="17.3.0" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-04-02T03:46:16.335Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36 Edg/99.0.1150.55" etag="lFSC8SRQ69JJEF-RqL12" version="17.3.0" type="github" pages="4">
   <diagram id="_yite2Zf-Uj0zalYXne-" name="subpub">
     <mxGraphModel dx="1873" dy="704" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1059,13 +1059,146 @@
     </mxGraphModel>
   </diagram>
   <diagram id="h6ERK8x-Pf4F89iKyUb_" name="recovery">
-    <mxGraphModel dx="1046" dy="704" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1873" dy="704" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="turqIHLEKmZpA-b8ZRGH-1" value="&lt;font face=&quot;Lucida Console&quot;&gt;recovery.cpp&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="315" y="150" width="110" height="20" as="geometry" />
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-1" value="recovery.cpp" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Lucida Console;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="335" y="70" width="110" height="20" as="geometry" />
         </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Lucida Console;" edge="1" parent="1" source="02eyqR9NWIaOA5TlpuF8-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-3" value="get_args()" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#808080;fontSize=12;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="300" y="110" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-4" value="进入recovery模式：reboot recovery" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="-5" y="70" width="270" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-5" value="获取命令行参数 并写入BCB" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=12;fontFamily=Lucida Console;strokeColor=#d6b656;fillColor=#FFFDE6;" vertex="1" parent="1">
+          <mxGeometry x="410" y="140" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Lucida Console;" edge="1" parent="1" source="02eyqR9NWIaOA5TlpuF8-9" target="02eyqR9NWIaOA5TlpuF8-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-7" value="存在" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Lucida Console;" vertex="1" connectable="0" parent="02eyqR9NWIaOA5TlpuF8-6">
+          <mxGeometry x="0.0974" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-8" value="不存在" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Lucida Console;" edge="1" parent="1" source="02eyqR9NWIaOA5TlpuF8-9" target="02eyqR9NWIaOA5TlpuF8-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-9" value="/cache/recovery/command" style="rhombus;whiteSpace=wrap;html=1;sketch=0;rounded=1;fontFamily=Lucida Console;fontSize=12;strokeColor=#616161;" vertex="1" parent="1">
+          <mxGeometry x="325" y="264" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Lucida Console;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="02eyqR9NWIaOA5TlpuF8-11" target="02eyqR9NWIaOA5TlpuF8-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="370" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="190" y="394" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-11" value="用command中指定的路径覆盖默认的 MD5、升级包路径" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#808080;fontSize=12;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="100" y="320" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Lucida Console;" edge="1" parent="1" source="02eyqR9NWIaOA5TlpuF8-13" target="02eyqR9NWIaOA5TlpuF8-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-13" value="检测升级包是否损坏" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#808080;fontSize=12;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="300" y="379" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-14" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Lucida Console;" edge="1" parent="1" source="02eyqR9NWIaOA5TlpuF8-15" target="02eyqR9NWIaOA5TlpuF8-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-15" value="cache分区是否挂载" style="rhombus;whiteSpace=wrap;html=1;sketch=0;rounded=1;fontFamily=Lucida Console;fontSize=12;strokeColor=#616161;" vertex="1" parent="1">
+          <mxGeometry x="325" y="180" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-16" value="计算并比较MD5" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=12;fontFamily=Lucida Console;strokeColor=#d6b656;fillColor=#FFFDE6;" vertex="1" parent="1">
+          <mxGeometry x="444" y="409" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Lucida Console;" edge="1" parent="1" source="02eyqR9NWIaOA5TlpuF8-20" target="02eyqR9NWIaOA5TlpuF8-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-18" value="全量包" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Lucida Console;" vertex="1" connectable="0" parent="02eyqR9NWIaOA5TlpuF8-17">
+          <mxGeometry x="-0.2089" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Lucida Console;" edge="1" parent="1" source="02eyqR9NWIaOA5TlpuF8-20" target="02eyqR9NWIaOA5TlpuF8-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-20" value="升级包是全量包 还是 差分包" style="rhombus;whiteSpace=wrap;html=1;sketch=0;rounded=1;fontFamily=Lucida Console;fontSize=12;strokeColor=#616161;" vertex="1" parent="1">
+          <mxGeometry x="325" y="449" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Lucida Console;" edge="1" parent="1" source="02eyqR9NWIaOA5TlpuF8-22" target="02eyqR9NWIaOA5TlpuF8-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-22" value="卸载 system、fireware分区&lt;br&gt;umount /system&lt;br&gt;umount /fireware" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#808080;fontSize=12;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="100" y="509" width="180" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Lucida Console;" edge="1" parent="1" source="02eyqR9NWIaOA5TlpuF8-24" target="02eyqR9NWIaOA5TlpuF8-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-24" value="/usr/bin/mg_recovery --update_package=/cache/update.zip -p /etc/policy_file" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#808080;fontSize=12;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="270" y="584.5" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Lucida Console;" edge="1" parent="1" source="02eyqR9NWIaOA5TlpuF8-26" target="02eyqR9NWIaOA5TlpuF8-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-26" value="set_update_result()" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#808080;fontSize=12;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="300" y="819" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Lucida Console;" edge="1" parent="1" source="02eyqR9NWIaOA5TlpuF8-28" target="02eyqR9NWIaOA5TlpuF8-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-28" value="finish_recovery()" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#808080;fontSize=12;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="300" y="889" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Lucida Console;" edge="1" parent="1" source="02eyqR9NWIaOA5TlpuF8-30" target="02eyqR9NWIaOA5TlpuF8-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-30" value="删除升级包、MD5文件&lt;br&gt;sync()" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#808080;fontSize=12;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="300" y="959" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-31" value="syscall(SYS_reboot, LINUX_REBOOT_MAGIC1, LINUX_REBOOT_MAGIC2, LINUX_REBOOT_CMD_RESTART, NULL)" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#808080;fontSize=12;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="265" y="1029" width="250" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-32" value="mg_recovery是广升给的" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=12;fontFamily=Lucida Console;strokeColor=#d6b656;fillColor=#FFFDE6;" vertex="1" parent="1">
+          <mxGeometry x="415" y="634.5" width="160" height="20" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;h1 class=&quot;title-article&quot; id=&quot;articleContentId&quot; style=&quot;box-sizing: border-box ; outline: 0px ; margin: 0px ; padding: 0px ; font-family: &amp;#34;pingfang sc&amp;#34; , &amp;#34;microsoft yahei&amp;#34; , &amp;#34;simhei&amp;#34; , &amp;#34;arial&amp;#34; , &amp;#34;simsun&amp;#34; ; overflow-wrap: break-word ; color: rgb(34 , 34 , 38) ; word-break: break-all ; background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;Android设备开机日志分析&lt;/font&gt;&lt;/h1&gt;https://blog.csdn.net/dongyi1988/article/details/103994152" link="https://blog.csdn.net/dongyi1988/article/details/103994152" id="02eyqR9NWIaOA5TlpuF8-33">
+          <mxCell style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Lucida Console;" vertex="1" parent="1">
+            <mxGeometry x="-628" y="210" width="430" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Lucida Console;" edge="1" parent="1" source="02eyqR9NWIaOA5TlpuF8-35" target="02eyqR9NWIaOA5TlpuF8-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-35" value="update_pkg" style="rhombus;whiteSpace=wrap;html=1;sketch=0;rounded=1;fontFamily=Lucida Console;fontSize=12;strokeColor=#616161;" vertex="1" parent="1">
+          <mxGeometry x="325" y="680" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Lucida Console;" edge="1" parent="1" source="02eyqR9NWIaOA5TlpuF8-37" target="02eyqR9NWIaOA5TlpuF8-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="02eyqR9NWIaOA5TlpuF8-37" value="install_package()" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#808080;fontSize=12;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="300" y="740" width="180" height="30" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;b&gt;Android recovery 升级流程&lt;/b&gt;&lt;br&gt;https://zhuanlan.zhihu.com/p/50590880" link="https://zhuanlan.zhihu.com/p/50590880" id="02eyqR9NWIaOA5TlpuF8-38">
+          <mxCell style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Lucida Console;" vertex="1" parent="1">
+            <mxGeometry x="-540" y="270" width="280" height="30" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;Android recovery 升级原理&lt;/b&gt;&lt;br&gt;https://www.cnblogs.com/linhaostudy/p/11543687.html" link="https://www.cnblogs.com/linhaostudy/p/11543687.html" id="02eyqR9NWIaOA5TlpuF8-39">
+          <mxCell style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Lucida Console;" vertex="1" parent="1">
+            <mxGeometry x="-603" y="340" width="380" height="30" as="geometry" />
+          </mxCell>
+        </UserObject>
       </root>
     </mxGraphModel>
   </diagram>
